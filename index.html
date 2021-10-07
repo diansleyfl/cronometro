@@ -6,18 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Tags para SEO-->
-    <meta name="description" content="Exemplo de uma descrição para o meu site" >
-    <meta name="keywords" content="palavras-chave,separadas,por,virgula" >
+    <meta name="description" content="Cronômetro web" >
+    <meta name="keywords" content="cronometro,stopwatch" >
     <meta name="author" content="Diansley Fernandes de Lima" >
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./assets/css/style.css">
     
-    <title>Document</title>
+    <title>Cronômetro</title>
 </head>
 
 
 <body>
-    
+
+    <audio id="sound" src="./assets/song/alarm.mp3" style="display: none;"></audio>
+
+    <div class="container">
+
+        <img src="./assets/img/cronometro.gif">
+
+        <h2>Minutos:</h2>
+        <select id="minutos" name="minutos"></select>
+
+        <h2>Segundos:</h2>
+        <select id="segundos" name="segundos"></select>
+
+        <button id="comecar">Começar</button>
+
+        <div id="display">
+            <h3></h3>
+        </div><!--display-->
+
+    </div><!--container-->
+
 </body>
 
 
